@@ -1,0 +1,3 @@
+How to create cluster 
+
+# eksctl create cluster --name shareef786 --nodegroup-name shaik --node-type m7i-flex.large --nodes 2 --managed
