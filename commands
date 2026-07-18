@@ -1,3 +1,24 @@
 How to create cluster 
 
-# eksctl create cluster --name shareef786 --nodegroup-name shaik --node-type m7i-flex.large --nodes 2 --managed
+eksctl create cluster --name shareef786 --nodegroup-name shaik --node-type m7i-flex.large --nodes 2 --managed
+
+
+
+curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_${PLATFORM}.tar.gz"
+
+tar -xzf eksctl_${PLATFORM}.tar.gz
+
+mv eksctl /usr/local/bin/
+
+eksctl version
+
+
+
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+chmod +x kubectl
+
+mv kubectl /usr/local/bin/
+
+kubectl version --client
+
