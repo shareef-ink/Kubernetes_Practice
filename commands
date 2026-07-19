@@ -4,9 +4,9 @@ eksctl create cluster --name shareef786 --nodegroup-name shaik --node-type m7i-f
 
 
 
-curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_${PLATFORM}.tar.gz"
+curl -sSL -o eksctl.tar.gz https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_${PLATFORM}.tar.gz
 
-tar -xzf eksctl_${PLATFORM}.tar.gz
+tar -xzf eksctl.tar.gz
 
 mv eksctl /usr/local/bin/
 
